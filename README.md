@@ -30,17 +30,15 @@
 - [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
-Home Page of facebook cloning in name of "Friendzee" is a responsive website. The technologies used in this project are HTML, CSS, JavaScript, MongoDB and cluster. There are a few important modules in the project like home page, creating post, adding/deleting the images, online/offline status of user and Like/Share/Comments. The data is accessed using Rest API and then rendered into the webpage. I took almost 40 - 50 hrs to complete this project. SkillLync helped me by providing the wire-frames for all relevant features.
+Home Page of TravelSomeWhere is a responsive website. The technologies used in this project are HTML, CSS, JavaScript, MongoDB and cluster. There are a few important modules in the project like home page, login and registration, finding the tourist places, map and foods facilities. I took almost 40 - 50 hrs to complete this project. SkillLync helped me by providing the wire-frames for all relevant features.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 1. Clone the repository and navigate to the root directory.
-2. Install the required dependencies for the SpringBoot backend by running ./mvnw install or mvnw.cmd install on Windows or from https://start.spring.io/.
-3. Configure the database connection by modifying application.properties with your database information.
-4. Start the SpringBoot backend by running ./mvnw spring-boot:run or mvnw.cmd spring-boot:run on Windows or run "java application" from "Run As".
-5. Navigate to the client directory and install the required dependencies for the Next.js frontend by running npm install.
-6. Start the Next.js frontend by running npm run dev.
-7. Open your web browser and navigate to http://localhost:3000 to view the application.
+2. Install the required dependencies required for the Project using Javascript by running npm install.
+3. Configure the database connection by modifying application.properties with your database information using mongoose and configure the mongoDB cluster.
+4. Start the project by running npm run dev.
+5. Open your web browser and navigate to http://localhost:3000 to view the application.
 
 
  See [deployment](#deployment) for notes on how to deploy the project on a live system.
@@ -49,47 +47,52 @@ These instructions will get you a copy of the project up and running on your loc
 
 we have to install 
 
-Eclipse(java 17),
+
 Visual Studio,
-MySQL5,
-Next-auth, 
-next-react, 
-react-redux, 
-@reduxjs/toolkit, 
-TailwindCSS, 
+MongoDB Compass,
+react-google-login, 
+bcryptis, 
+express, 
+express handebars, 
+hbs, 
 axios, 
-eslint
+mongoose
 
 ### Installing
 A step by step series of examples that tell you how to get a development env running.
 
 Back-End:
 
-https://start.spring.io/
-
-https://mysql.com/downloads/mysql/
-
-https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2023-03/R/eclipse-inst-jre-win64.exe
+https://www.mongodb.com/try/download/compass
 
 Front-End:
 
-npx create-next-app facebook-clone
+npm init 
 
-npm install -D tailwindcss postcss autoprefixer
-
-npx tailwindcss init -p
-
-npm install react-icons --save
-
-npm install --save next-auth
+npm install
 
 npm install axios
 
-npm install react-redux
+npm install express
 
-npm install @reduxjs/toolkit
+npm install bcryptjs
 
-npm install --save-dev eslint
+npm install body-parser
+
+npm install connect-flash
+
+npm install express-handlebars
+
+npm install express-session
+
+npm install express-validator
+
+npm install hbs
+
+npm install mongoose
+
+npm install nodeman
+
 
 
 
@@ -97,15 +100,14 @@ npm install --save-dev eslint
 
 Running the project using the following commands:
 
-1. By clicking "java application" from "Run As" for SpringBoot to start the project
 
-2. By typing "npm run dev" for nextJs in Front-End
+1. By typing "npm run dev" or "npm start" for nodejs in Front-End
 
 
 ### Break down into end to end tests
 End-to-end tests are designed to test the complete flow of the application from the user's perspective so it's important to think about the different user actions and interactions that need to be tested. 
 
-1. User authentication: Test the user authentication flow, including logging in with valid and invalid credentials, session management, and logout functionality using the NextAuth(facebook).
+1. User authentication: Test the user authentication flow, including logging in with valid and invalid credentials, session management, and logout functionality using the NextAuth(Google authentication).
 
 2. User profile: Test the user profile functionality, including editing user information, uploading pictures, and viewing other users' profiles.
 
