@@ -170,6 +170,4 @@ I would like to thank the following individuals for their contributions to this 
 - References:
 https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=bing&utm_campaign=search_bs_pl_evergreen_atlas_core_prosp-brand_gic-null_apac-in_ps-all_desktop_eng_lead&utm_term=cloud%20mongodb&utm_medium=cpc_paid_search&utm_ad=p&utm_ad_campaign_id=415204524&adgroup=1222657400083518&msclkid=7318cb68f0891289e32aaf3882e74b08
 
-  https://www.codejava.net/frameworks/spring-boot/social-login-with-facebook-example
 
-  https://bobbyhadz.com/blog/react-axios-network-error-stack-trace
