@@ -36,7 +36,7 @@ Home Page of TravelSomeWhere is a responsive website. The technologies used in t
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 1. Clone the repository and navigate to the root directory.
 2. Install the required dependencies required for the Project using Javascript by running npm install.
-3. Configure the database connection by modifying application.properties with your database information using mongoose and configure the mongoDB cluster.
+3. Configure the database connection by modifying conn.js and db.js with your database information using mongoose using the mongoDB cloud cluster.
 4. Start the project by running npm run dev.
 5. Open your web browser and navigate to http://localhost:3000 to view the application.
 
@@ -103,62 +103,58 @@ Running the project using the following commands:
 
 1. By typing "npm run dev" or "npm start" for nodejs in Front-End
 
+2. By connecting the MongoDB Compass connection using MongoDB Cloud Cluster 
+
 
 ### Break down into end to end tests
 End-to-end tests are designed to test the complete flow of the application from the user's perspective so it's important to think about the different user actions and interactions that need to be tested. 
 
 1. User authentication: Test the user authentication flow, including logging in with valid and invalid credentials, session management, and logout functionality using the NextAuth(Google authentication).
 
-2. User profile: Test the user profile functionality, including editing user information, uploading pictures, and viewing other users' profiles.
+2. User profile: Test the user profile functionality, including editing user information, searching tourist places, and viewing tourist profiles along with food and maps.
 
-3. Creating the post: Test the ability to create posts and comments, including the display of posts and comments in the user's feed, and the ability to delete or edit posts and comments.
+3. Search functionality: Test the ability to search for tourist places, maps, contact us and foods content within the application.
 
-4. Search functionality: Test the ability to search for users, posts, and other content within the application.
-
-5. Status: Test the status whether user is online or offline mode.
-
-6. Integration with external APIs: Test any integrations with external APIs for social media platforms.
+4. Integration with external APIs: Test any integrations with external APIs for travel website.
 
 By testing the application end-to-end, the entire application is functioning as expected and that users can successfully complete the tasks.
 
 ## 🎈 Usage <a name="usage"></a>
 1. Installation: Need to install all the supporting dependencies as mentioned in installing topic.
 
-2. Configuration: Configure the database connection by modifying application.properties with your database information.
+2. Configuration: Configure the database connection by modifying conn.js and db.js with your database information.
 
-3. Usage instructions: Start the back end server, then start the front end using npm run dev, give the login access using NextAuth from facebook. After successful login, we can create the post using images/videos and Activity.
+3. Usage instructions: Start the front end using npm run dev or npm start, give the login access by registering the TravelSomeWhere. After successful login, we can search the tourist, places uing search box and give feedback about website.
 
-4. API documentation: REST APIs communicate via HTTP requests to perform standard database functions like creating, reading, updating, and deleting records (also known as CRUD) within a resource. For example, a REST API would use a GET request to retrieve a record, a POST request to create one, a PUT request to update a record, and a DELETE request to delete one. All HTTP methods can be used in API calls. A well-designed REST API is similar to a website running in a web browser with built-in HTTP functionality.
+4. API documentation: REST APIs communicate via HTTP requests to perform standard database functions inserting, reading, updating, and deleting records (also known as CRUD) within a resource. All HTTP methods can be used in API calls. A well-designed REST API is similar to a website running in a web browser with built-in HTTP functionality.
 
-5. Limitations: As it is cloning project, users can able to create post or delete the post when using the application. This can include known bugs or issues, performance limitations, or any specific use cases that the application or library may not support.
+5. Limitations: As it is travel website project, users can able to search the tourist place or see the locations and food items when using the application. This can include known bugs or issues, performance limitations, or any specific use cases that the application or library may not support.
 
-6. Troubleshooting: Before starting the Back-end server, user can't start from the client side. It will throw axios: NetworkError.
+6. Troubleshooting: Once successfully login only allowed to view the detailled information, user can't see from the client side without registering the website. It will throw alert box to login to proceed further.
 
 ## 🚀 Deployment <a name = "deployment"></a>
 To deploy the application to a production environment, follow these steps:
 
-1. Ensure that you have installed the required dependencies and have configured the necessary environment variables, such as the database connection details and any API keys or secrets(facebook).
+1. Ensure that you have installed the required dependencies and have configured the necessary environment variables, such as the database connection details.
 
-2. Start the application by running "java application" from Run As for the backend.
+2. Start the application by running "npm run dev" for the frontend.
 
 3. Copy the built application to the server or hosting environment where you want to deploy the application.
 
-4. Start the application by running "npm run dev" for the frontend.
+4. Application is accessible from the internet by configuring http://loclhost:3000.
 
-5. Application is accessible from the internet by configuring http://loclhost:3000 and http://localhost:8080/api/v1/post.
-
-6. Monitor the application for any errors or issues, and make any necessary updates or patches as needed.
+5. Monitor the application for any errors or issues, and make any necessary updates or patches as needed.
 
 
 
 ## ⛏ Flow Chart <a name = "flowchart"></a>
 
-![bg width:1000px](./flowchart_of_Fb_cloning.drawio.png)
+![bg width:1000px](./Flowchart of TravelSomeWhere.drawio.png)
 
-- [MySQL](https://mysql.com/) - Database
+- [MongoDB Compass](https://www.mongodb.com/) - Database
 - [Express](https://expressjs.com/) - Server Framework
-- [NextJs](https://nextjs.org/) - Web Framework
-- [Eclipse](https://www.eclipse.org/) - Server Environment
+- [NodeJs](https://nodejs.org/) - Web Framework
+- [MogoDB Cloud Cluster](https://cloud.mongodb.com/v2/6446526b3b5cb434d40d4dd9#/clusters) - Server Environment
 
 ## ✍️ Authors <a name = "authors"></a>
 - [@SkillLymc](https://github.com/kylelobo) - FSD
@@ -172,7 +168,7 @@ I would like to thank the following individuals for their contributions to this 
 
   Without their contributions, this project would not have been possible.
 - References:
-https://dev.to/cometchat/how-to-build-a-social-networking-site-with-next-js-facebook-clone-3eke
+https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=bing&utm_campaign=search_bs_pl_evergreen_atlas_core_prosp-brand_gic-null_apac-in_ps-all_desktop_eng_lead&utm_term=cloud%20mongodb&utm_medium=cpc_paid_search&utm_ad=p&utm_ad_campaign_id=415204524&adgroup=1222657400083518&msclkid=7318cb68f0891289e32aaf3882e74b08
 
   https://www.codejava.net/frameworks/spring-boot/social-login-with-facebook-example
 
