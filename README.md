@@ -149,7 +149,7 @@ To deploy the application to a production environment, follow these steps:
 
 ## ⛏ Flow Chart <a name = "flowchart"></a>
 
-![bg width:1000px](./flowchart of TravelSomeWhere.png)
+![bg width:1000px](./flowchart.png)
 
 - [MongoDB Compass](https://www.mongodb.com/) - Database
 - [Express](https://expressjs.com/) - Server Framework
