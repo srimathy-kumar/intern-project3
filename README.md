@@ -54,6 +54,8 @@ react-google-login,
 bcryptis, 
 express, 
 express handebars, 
+express vaidator,
+express session,
 hbs, 
 axios, 
 mongoose
